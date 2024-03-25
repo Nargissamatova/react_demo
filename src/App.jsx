@@ -5,17 +5,28 @@ import { useState } from 'react'
 
 
 function App() {
-const [counter, setCounter] = useState('hi')
+const [counter, setCounter] = useState('something here')
+const [persons, setPersons] = useState([
+  {id: 1, name: 'Nargis', title: 'student', location: 'Helsinki'},
+  {id: 2, name: 'John Doe', title: 'developer', location: 'somewhere'},
+  {id: 3, name: 'Someone', title: 'designer', location: 'somewhere'}
 
-  return (
-    <>
-  
-    <p>counter: {counter}</p>
-    <Box name='Nargis' title='student' location='Helsinki' />
-    <Box name='Blabla' title='someone' location='Helsinki' />
-    <Box name='Someone' title='student' location='somewhere' />
-    </>
-  )
+])
+
+return (
+  <>
+  <p>counter: {counter}</p>
+
+  {persons.map((person) => (
+  <Box 
+    key={person.name}
+    name={person.name}
+    title= {person.title}
+    location={person.location}
+  />
+  ))}
+  </>
+  );
 }
 
 export default App
