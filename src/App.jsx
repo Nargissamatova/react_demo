@@ -17,12 +17,19 @@ const clickHandler = () =>{
 console.log('I am clicked');
 setCounter(counter+ 1);
 }
+const deacreaser = () =>{
+  setCounter(counter - 1)
+}
+const zero = () =>{
+  setCounter(counter * 0)
+}
 
 return (
   <>
   <p>counter: {counter}</p>
-  <button onClick={clickHandler}>Click me</button>
-
+  <button onClick={clickHandler}>+</button>
+  <button onClick={deacreaser}>-</button>
+  <button onClick={zero}>0</button>
   {persons.map((person) => (
   <Box 
     key={person.name}
