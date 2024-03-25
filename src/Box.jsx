@@ -6,6 +6,7 @@ const Box = (props) =>{
         <p>Title: {props.title}</p>
         <p>Location: {props.location}</p>
       </div>
+      
     )
   }
 
