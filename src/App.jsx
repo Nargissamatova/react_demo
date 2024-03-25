@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import './Box.css'
 import Box from './Box'
 
 
@@ -8,11 +9,9 @@ function App() {
 
   return (
     <>
-    <h1>Hi</h1>
-    <Box/>
-    <Box/>
-    <Box/>
-
+    <Box name='Nargis' title='student' location='Helsinki' />
+    <Box name='Blabla' title='someone' location='Helsinki' />
+    <Box name='Someone' title='student' location='somewhere' />
     </>
   )
 }

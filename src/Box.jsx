@@ -1,9 +1,10 @@
-const Box = () =>{
+const Box = (props) =>{
     return (
-      <div>
-        <p>Name:</p>
-        <p>Title:</p>
-        <p>Location:</p>
+      <div className="container">
+        <h1>{props.name}</h1>
+        <p>Name: {props.name}</p>
+        <p>Title: {props.title}</p>
+        <p>Location: {props.location}</p>
       </div>
     )
   }
