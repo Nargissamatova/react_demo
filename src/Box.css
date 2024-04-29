@@ -4,9 +4,16 @@ nav {
     justify-content: center;
 }
 
-li {
-    width: 400px;
-    list-style-type: none;
+ul {
+    width: 100%;
     display: flex;
     justify-content: space-around;
+}
+
+li {
+    list-style-type: none;
+}
+
+a.active {
+    color: yellowgreen;
 }

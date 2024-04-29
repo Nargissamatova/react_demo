@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer className="section">
-      <h3> &copy; Copyright</h3>
+      <h4> &copy; Copyright</h4>
     </footer>
   );
 }
