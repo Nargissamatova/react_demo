@@ -1,33 +1,26 @@
 import "./App.css";
 import "./Box.css";
 
-//import Box from "./Box";
-import Header from "./Header";
-import Footer from "./Footer";
-//import Counter from "./Counter";
-import Form from "./Form";
-import View from "./View";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 import { useState } from "react";
-import Dashboard from "./Dashboard";
 
 function App() {
-  const [formData, setFormData] = useState({});
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
-
-  const displayHandler = () => {
-    setIsLoggedIn(!isLoggedIn);
-  };
+  const router = createBrowserRouter([
+    { path: "/", element: <Home /> },
+    { path: "/about", element: <About /> },
+  ]);
 
   return (
     <>
-      <Header />
-      {isLoggedIn && <Dashboard user="Nargis" />}
-      <button onClick={displayHandler}>Click me</button>
-      <Footer />
+      <RouterProvider router={router} />
     </>
   );
 }
+
+export default App;
 
 /*
   const [counter, setCounter] = useState(0);
@@ -71,4 +64,17 @@ function App() {
 }
 */
 
-export default App;
+/*
+  // const [formData, setFormData] = useState({});
+  // const [isLoggedIn, setIsLoggedIn] = useState(true);
+
+  const displayHandler = () => {
+    setIsLoggedIn(!isLoggedIn);
+  };
+
+ <Header />
+      {isLoggedIn && <Dashboard user="Nargis" />}
+      <button onClick={displayHandler}>Click me</button>
+      <Footer />
+
+*/
