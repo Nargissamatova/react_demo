@@ -8,7 +8,7 @@ function Root() {
     <>
       <Header />
       <main>
-        <h2>Content will be changing in here</h2>
+        <h2>"Content will be changing in here"</h2>
       </main>
       <Outlet />
       <Footer />
