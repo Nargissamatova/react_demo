@@ -2,14 +2,16 @@ import "./App.css";
 import "./Box.css";
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
+import About from "./pages/About.jsx";
+import Root from "./Root.jsx";
 
 import { useState } from "react";
 
 function App() {
   const router = createBrowserRouter([
-    { path: "/", element: <Home /> },
+    { path: "/", element: <Root /> },
     { path: "/about", element: <About /> },
   ]);
 

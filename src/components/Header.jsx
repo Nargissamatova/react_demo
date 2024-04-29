@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
     <header className="section">
@@ -5,9 +7,9 @@ function Header() {
       <nav>
         <ul>
           <li>
-            <Link>Landing page</Link>
-            <Link>Persons</Link>
-            <Link>About</Link>
+            <Link to="/">Landing page</Link>
+            <Link to="/persons">Persons</Link>
+            <Link to="/about">About</Link>
           </li>
         </ul>
       </nav>
