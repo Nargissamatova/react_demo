@@ -6,6 +6,7 @@ import { useState } from "react";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
+import Persons from "./pages/Persons.jsx";
 import Root from "./Root.jsx";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       element: <Root />,
       children: [
         { path: "/", element: <Home /> },
+        { path: "/persons", element: <Persons /> },
         { path: "/about", element: <About /> },
       ],
     },
