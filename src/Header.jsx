@@ -1,5 +1,3 @@
-import "./sections.css";
-
 function Header() {
   return (
     <header className="section">

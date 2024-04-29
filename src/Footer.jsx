@@ -1,9 +1,7 @@
-import "./sections.css";
-
 function Footer() {
   return (
     <footer className="section">
-      <h3> &copy; Copyright smth</h3>
+      <h3> &copy; Copyright</h3>
     </footer>
   );
 }
