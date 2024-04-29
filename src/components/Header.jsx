@@ -7,9 +7,9 @@ function Header() {
       <nav>
         <ul>
           <li>
-            <Link to="/">Landing page</Link>
-            <Link to="/persons">Persons</Link>
-            <Link to="/about">About</Link>
+            <Link to="/">Home </Link>
+            <Link to="/persons">Persons </Link>
+            <Link to="/about">About </Link>
           </li>
         </ul>
       </nav>

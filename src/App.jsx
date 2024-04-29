@@ -1,18 +1,23 @@
 import "./App.css";
 import "./Box.css";
 
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Header from "./components/Header.jsx";
-import Footer from "./components/Footer.jsx";
+import { useState } from "react";
+
+import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
+import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Root from "./Root.jsx";
 
-import { useState } from "react";
-
 function App() {
   const router = createBrowserRouter([
-    { path: "/", element: <Root /> },
-    { path: "/about", element: <About /> },
+    {
+      path: "/",
+      element: <Root />,
+      children: [
+        { path: "/", element: <Home /> },
+        { path: "/about", element: <About /> },
+      ],
+    },
   ]);
 
   return (
