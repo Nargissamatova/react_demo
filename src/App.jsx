@@ -7,6 +7,7 @@ import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Persons from "./pages/Persons.jsx";
+import ErrorPage from "./pages/ErrorPage.jsx";
 import Root from "./Root.jsx";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     {
       path: "/",
       element: <Root />,
+      errorElement: <ErrorPage />,
       children: [
         { path: "/", element: <Home /> },
         { path: "/persons", element: <Persons /> },
