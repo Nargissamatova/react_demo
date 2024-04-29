@@ -22,7 +22,6 @@ function App() {
   return (
     <>
       <Header />
-
       {isLoggedIn && <Dashboard user="Nargis" />}
       <button onClick={displayHandler}>Click me</button>
       <Footer />
