@@ -10,8 +10,8 @@ function Root() {
       <main>
         <h2>Content will be chaning in here</h2>
       </main>
-      <Footer />
       <Outlet />
+      <Footer />
     </>
   );
 }
